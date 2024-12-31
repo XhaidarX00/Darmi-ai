@@ -1,5 +1,3 @@
-Berikut adalah revisi dokumentasi Anda untuk membuatnya lebih rapi, jelas, dan profesional:  
-
 ---
 
 # **Darmi AI Chatbot Documentation**  
