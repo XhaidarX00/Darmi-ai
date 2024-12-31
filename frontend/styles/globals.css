@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.shadows-into-light-regular {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dancing-script-regular {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.sofadi-one-regular {
+  font-family: "Sofadi One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: fit-content; } /* Ubah dari width 100% menjadi fit-content */
+}
+
+.typing-animation {
+  display: inline-block;
+  white-space: nowrap;
+  border-right: 3px solid white; /* Simulasi kursor */
+  overflow: hidden; /* Sembunyikan teks saat belum selesai diketik */
+  animation: typing 4s steps(60, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}
+
+
+.bg-cover {
+  background-image: url('/asset/bgbot_.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .bg-cover {
+    background-image: url('/asset/bgbot_.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+}
